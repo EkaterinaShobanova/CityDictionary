@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Города России</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">
+    <h1 class="heading">Города России</h1>
+
+</div>
+    <div class="container">
+
+        <div class="main-content">
+            <div class="left-side-container">
+
+                <div id="list3" class="dropdown-check-list" tabindex="100">
+                    <span class="anchor">Федеральные округа:</span>
+                    <ul class="items">
+                        <li><input type="checkbox"  value ="Центральный">Центральный</li>
+                        <li><input type="checkbox"  value ="Северо-Западный">Северо-Западный</li>
+                        <li><input type="checkbox"  value ="Южный">Южный</li>
+                        <li><input type="checkbox"  value ="Северо-Кавказский">Северо-Кавказский</li>
+                        <li><input type="checkbox"  value ="Уральский">Уральский</li>
+                        <li><input type="checkbox"  value ="Приволжский">Приволжский</li>
+                        <li><input type="checkbox"  value ="Дальневосточный">Дальневосточный</li>
+                        <li><input type="checkbox"  value ="Сибирский">Сибирский</li>
+                    </ul>
+                </div>
+
+                <button onclick="makeTable()" id="updateButton" class="update">Обновить</button>
+
+            </div>
+            <div class="right-side-container">
+                <table id="dataTable">
+                    <!-- Table content will be inserted here dynamically -->
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
